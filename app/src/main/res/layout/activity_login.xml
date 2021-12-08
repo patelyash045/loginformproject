@@ -8,11 +8,11 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/Prakash_logo"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/prakash_logo"
+        android:src="@drawable/prakash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/Prakash_logo"
         app:layout_constraintVertical_bias="0.1"
         >
 
@@ -47,41 +47,13 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="@color/secondaryLightColor"
-        android:drawableStart="@drawable/ic_person"
-        android:drawablePadding="12dp"
-        android:ems="10"
-        android:hint="Enter Email or Phone"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:padding="5dp"
-        android:textSize="20sp"
-
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-    -->
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etPassOut"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-
-
-
         android:hint="password"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,34 +76,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--
-    <EditText
-        android:id="@+id/etPass"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:background="@drawable/custom_input"
-        android:backgroundTint="@color/secondaryLightColor"
-        android:drawableStart="@drawable/ic_lock"
-        android:drawableEnd="@drawable/ic_eye"
-        android:drawablePadding="12dp"
-        android:ems="10"
-        android:hint="password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:padding="5dp"
-        android:textSize="20sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNameOut"
-        app:layout_constraintVertical_bias="0.1"
-        tools:ignore="MissingConstraints" />
-
-        -->
-
-
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
@@ -139,12 +83,6 @@
         android:layout_marginHorizontal="30dp"
 
         app:backgroundTint="@color/priBlue"
-
-
-
-
-
-
 
         android:text="@string/login"
         android:textAllCaps="false"
@@ -156,7 +94,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtForgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
@@ -170,7 +108,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an Account? Sign Up now"
@@ -179,10 +117,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtForgot"
         app:layout_constraintVertical_bias="0.95" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
