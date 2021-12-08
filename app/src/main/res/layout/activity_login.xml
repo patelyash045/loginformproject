@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/Prakash_logo"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/prakash"
         app:layout_constraintEnd_toEndOf="parent"
