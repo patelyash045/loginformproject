@@ -1,10 +1,10 @@
-package com.prakash.loginformproject
+package com.prakash.loginformproject.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import com.prakash.loginformproject.activity.SignupActivity
+import com.prakash.loginformproject.R
 
 class LoginActivity : AppCompatActivity() {
 
