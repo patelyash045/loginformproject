@@ -120,8 +120,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/centerShim"
                 android:layout_alignParentStart="true"
-
                 android:hint="first name">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -135,14 +135,20 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <View
+                android:id="@+id/centerShim"
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"/>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/etLNameOut"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-
-                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@+id/centerShim"
 
                 android:hint="last name">
 
@@ -174,7 +180,7 @@
                 android:drawablePadding="8dp"
                 android:textSize="16sp"
 
-                android:drawableStart="@drawable/ic_person"
+                android:drawableStart="@drawable/ic_email"
                 android:inputType="text"/>
 
         </com.google.android.material.textfield.TextInputLayout>
